@@ -16,9 +16,13 @@ int main(void)
 
 	while (*s != '\0')
 	{
-		if (*s == 'q' || *s == 'e')
+		char out = (char)*s;
+
+		if (out == 'q' || out == 'e')
+		{
 			s++;
 			continue;
+		}
 		putchar(*s);
 		s++;
 	}
