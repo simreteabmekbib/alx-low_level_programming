@@ -1,10 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - main block
- * Return: 0
+ * main - Entry point
+ * Return:0
  */
+
 int main(void)
 {
-printf("_putchar\n");
+char c[8] = "_putchar";
+int i = 0;
+while (i < 9)
+{
+_putchar(c[i]);
+i++;
+}
+_putchar('\n');
 return (0);
 }
