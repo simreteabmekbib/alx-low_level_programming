@@ -12,8 +12,8 @@ int main(void)
 
 	while (b < 4000000)
 	{
-		
-		sum += r;
+		if ((r % 2) == 0)
+			sum += r;
 		a = b;
 		b = r;
 		r = a + b;
