@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_times_table - it prints times table 
+ * print_times_table - it prints times table
  * @n: input for matrix
  */
- 
+
 void print_times_table(int n)
 {
 	int i;
@@ -16,6 +16,7 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				int r = i * j;
+
 				if (j == 0)
 					_putchar(r + '0');
 				else if (r < 10)
@@ -45,5 +46,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-	}		
+	}
 }
