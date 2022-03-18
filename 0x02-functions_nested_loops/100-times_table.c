@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_times_table - it prints times table
  * @n: input for matrix
  */
-
 void print_times_table(int n)
 {
 	int i;
@@ -20,23 +18,28 @@ void print_times_table(int n)
 
 				if (j == 0)
 					_putchar(r + '0');
-				else if (r < 10)
+				else
 				{
-					printf(",   ");
-					_putchar(r + '0');
-				}
-				else if (r < 100)
-				{
-					printf(",  ");
-					_putchar((r / 10) + '0');
-					_putchar((r % 10) + '0');
-				}
-				else if (r >= 100)
-				{
-					printf(", ");
-					_putchar((r / 100) + '0');
-					_putchar(((r / 10) % 10) + '0');
-					_putchar((r % 10) + '0');
+					_putchar(',');
+					_putchar(' ');
+					else if (r < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(r + '0');
+					}
+					else if (r < 100)
+					{
+						_putchar(' ');
+						_putchar((r / 10) + '0');
+						_putchar((r % 10) + '0');
+					}
+					else if (r >= 100)
+					{
+						_putchar((r / 100) + '0');
+						_putchar(((r / 10) % 10) + '0');
+						_putchar((r % 10) + '0');
+					}
 				}
 			}
 			_putchar('\n');
