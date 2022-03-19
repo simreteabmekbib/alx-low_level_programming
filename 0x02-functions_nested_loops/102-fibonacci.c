@@ -7,16 +7,16 @@ int main(void)
 {
 	int i;
 
-	int a = 0;
-	int b = 1;
-	int r = a + b;
+	long a = 0;
+	long b = 1;
+	long r = a + b;
 
 	for (i = 0; i < 50; i++)
 	{
 		if (i < 49)
-			printf("%d, ", r);
+			printf("%ld, ", r);
 		else
-			printf("%d\n", r);
+			printf("%ld\n", r);
 		a = b;
 		b = r;
 		r = a + b;
